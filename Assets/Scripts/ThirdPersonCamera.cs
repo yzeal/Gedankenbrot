@@ -417,6 +417,11 @@ public class ThirdPersonCamera : MonoBehaviour
 				toTarget = new Vector3(wallHit.point.x, toTarget.y, wallHit.point.z);
 			}
 		}
+		
+		//Compensate for 
+		if(Physics.Raycast(toTarget, Vector3.down, out wallHit, 1+distanceUp)){
+			toTarget = new Vector3(toTarget.x, toTarget.y + distanceUp, toTarget.z);
+		}
 	}
 	
 	/// <summary>
