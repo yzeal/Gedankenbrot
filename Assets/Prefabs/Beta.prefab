@@ -1063,9 +1063,9 @@ GameObject:
   - 4: {fileID: 400140}
   - 95: {fileID: 9500000}
   - 54: {fileID: 5400000}
-  - 136: {fileID: 13600000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
+  - 136: {fileID: 13600000}
   m_Layer: 0
   m_Name: Beta
   m_TagString: Player
@@ -1947,7 +1947,7 @@ Animator:
   m_GameObject: {fileID: 100140}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: aef9e0d7fbf9f924091a41b93ff4fa44, type: 3}
-  m_Controller: {fileID: 9100000, guid: 1ac2a1891f6a2814dbcb83cbd24d5ee1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 524a786760abc284da00d7226412f0da, type: 2}
   m_CullingMode: 1
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
@@ -1961,6 +1961,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e189725cd50d5e4d9685014e9943197, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
   on: 0
   onlyInPlayMode: 1
   sceneViewFollowers:
@@ -1982,6 +1983,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b216def2ca252840817bbbae8b9f6bf, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
   animator: {fileID: 9500000}
   gamecam: {fileID: 0}
   rotationDegreePerSecond: 120
@@ -1998,13 +2000,13 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100140}
-  m_Material: {fileID: 13400000, guid: 8807a7d97971734408d2dea27600b2c7, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .400000006
+  m_Radius: .360000014
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: .970000029, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!137 &13700000
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
