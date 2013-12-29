@@ -5,14 +5,17 @@ public class golemTest : MonoBehaviour {
 
 	[SerializeField]
 	private GameObject player;
+	[SerializeField]
+	private AudioClip golemSound;	
 	
 	private NavMeshAgent agent;
-	private SphereCollider sphere;
 	private bool followCharacter;
+	private AudioSource soundTest;
+	
 	
     void Start() {
         agent = GetComponent<NavMeshAgent>();
-		sphere = GetComponentInChildren<SphereCollider>();
+		soundTest = GetComponent<AudioSource>();
 		
 		followCharacter = false;
     }
@@ -32,6 +35,10 @@ public class golemTest : MonoBehaviour {
 		if(other.CompareTag("Player")){
 			followCharacter = true;
 			Debug.Log("triggered");
+		}
+		
+		if(soundTest != null){
+			soundTest.Play();
 		}
 	}
 	

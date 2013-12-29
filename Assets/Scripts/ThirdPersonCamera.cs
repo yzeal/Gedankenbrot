@@ -418,9 +418,11 @@ public class ThirdPersonCamera : MonoBehaviour
 			}
 		}
 		
-		//Compensate for 
-		if(Physics.Raycast(toTarget, Vector3.down, out wallHit, 1+distanceUp)){
-			toTarget = new Vector3(toTarget.x, toTarget.y + distanceUp, toTarget.z);
+		//Compensate for declines
+		if((camState == CamStates.Behind || camState == CamStates.Target) && Physics.Raycast(toTarget, Vector3.down, out wallHit, 1+distanceUp)){
+			//float d = toTarget.y - wallHit.point.y;
+			float d = distanceUp;
+			toTarget = new Vector3(toTarget.x, toTarget.y + d, toTarget.z);
 		}
 	}
 	
