@@ -167,7 +167,7 @@ public class ThirdPersonCamera : MonoBehaviour
 		{
 			Debug.LogError("Parent camera to empty GameObject.", this);
 		}
-		
+
 		follow = GameObject.FindWithTag("Player").GetComponent<CharacterControllerLogic>();
 		followXform = GameObject.FindWithTag("Player").transform;
 		
@@ -257,6 +257,7 @@ public class ThirdPersonCamera : MonoBehaviour
 		
 		// Set the Look At Weight - amount to use look at IK vs using the head's animation
 		follow.Animator.SetLookAtWeight(lookWeight);
+	
 		
 		// Execute camera state
 		switch (camState)

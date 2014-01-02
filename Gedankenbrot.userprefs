@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ThirdPersonCamera.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\!WS 2013\Hypermedia\Projekt\Buchtest\Assets\FlippingBook\Scripts\BookEdit.cs">
     <Files>
-      <File FileName="D:\!Uni\!Trier\!WS 2013\Hypermedia\Projekt\Mythen\Assets\Skripte\LocationManager.cs" Line="215" Column="1" />
-      <File FileName="Assets\Scripts\ThirdPersonCamera.cs" Line="422" Column="7" />
+      <File FileName="..\..\!WS 2013\Hypermedia\Projekt\Buchtest\Assets\FlippingBook\Scripts\BookEdit.cs" Line="510" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
