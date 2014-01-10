@@ -196,7 +196,7 @@ public class CharacterControllerLogic : MonoBehaviour
             StickToWorldspace(this.transform, gamecam.transform, ref direction, ref charSpeed, ref charAngle, IsInPivot());		
 			
 			// Press B to sprint
-			if (Input.GetButton("Sprint"))
+			if (Input.GetButton("Sprint") && charSpeed > 0.1f)
 			{
 				speed = Mathf.Lerp(speed, SPRINT_SPEED, Time.deltaTime);
 				gamecam.camera.fieldOfView = Mathf.Lerp(gamecam.camera.fieldOfView, SPRINT_FOV, fovDampTime * Time.deltaTime);
@@ -302,12 +302,15 @@ public class CharacterControllerLogic : MonoBehaviour
 //			swim = true;
 			animator.SetBool("Fall", false);
 			rigidbody.useGravity = false;
+			rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
 			waterHeight = other.transform.position.y;
 			//if not grounded:
 			RaycastHit hit = new RaycastHit();
 			Physics.Raycast(transform.position, Vector3.down,out hit, 1.31f);
 			if(hit.collider == null){
 				transform.position = new Vector3(transform.position.x, other.transform.position.y-1.3f, transform.position.z);
+			}else{
+				rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
 			}
 		}
 	}

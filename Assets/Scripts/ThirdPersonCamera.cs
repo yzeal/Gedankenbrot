@@ -232,7 +232,7 @@ public class ThirdPersonCamera : MonoBehaviour
 			barEffect.coverage = Mathf.SmoothStep(barEffect.coverage, 0f, targetingTime);
 			
 			// * First Person *
-			if (rightY > firstPersonThreshold && camState != CamStates.Free && camState != CamStates.Free && !follow.IsInLocomotion())
+			if (rightY > firstPersonThreshold && camState != CamStates.FirstPerson && camState != CamStates.Free && !follow.IsInLocomotion())
 			{
 				// Reset look before entering the first person mode
 				xAxisRot = 0;
@@ -241,7 +241,7 @@ public class ThirdPersonCamera : MonoBehaviour
 			}
 			
 			//if (rightY < freeThreshold && System.Math.Round(follow.Speed, 2) == 0)
-			if (rightY < freeThreshold)
+			if (rightY < freeThreshold && camState != CamStates.FirstPerson)
 			{
 				camState = CamStates.Free;
 				savedRigToGoal = Vector3.zero;

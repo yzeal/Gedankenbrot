@@ -1,8 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\!WS 2013\Hypermedia\Projekt\Buchtest\Assets\FlippingBook\Scripts\BookEdit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ThirdPersonCamera.cs">
     <Files>
-      <File FileName="..\..\!WS 2013\Hypermedia\Projekt\Buchtest\Assets\FlippingBook\Scripts\BookEdit.cs" Line="510" Column="5" />
+      <File FileName="Assets\Scripts\ThirdPersonCamera.cs" Line="257" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
